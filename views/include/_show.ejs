@@ -1,0 +1,17 @@
+
+<% for(var i = 0; i< results.length; i++) {%>
+<tr>
+    <td><%= results[i].rollno %></td>
+    <td><%= results[i].name %></td>
+    <td><%= results[i].dateOfBirth %></td>
+    <td><%= results[i].score %></td>
+    <td>
+        <a href="/update-result?rollno=<%= results[i].rollno %>&dob=<%= results[i].dateOfBirth %>" class="btn border-shadow update">
+            <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+        </a>
+        <a href="#" class="btn border-shadow delete" data_id=<%= results[i].rollno %>>
+            <span class="text-gradient"><i class="fas fa-times"></i></span>
+        </a>
+    </td>
+</tr>
+<%}%>

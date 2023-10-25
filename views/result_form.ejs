@@ -1,0 +1,26 @@
+
+<!-- include header -->
+<%- include('include/_header')%>
+<!-- /include header -->
+
+
+<form action="/api/results" method="get" id="search_result">
+    <div class="result_form">
+        <div class="form-group">
+            <label for="rollno" class="text-light">Roll No.</label>
+            <input type="text" name="rollno" value="">
+        </div>
+        <div class="form-group">
+            <label for="dateOfBirth" class="text-light">Date of Birth</label>
+            <input type="date" name="dateOfBirth" value="">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">Search</button>
+        </div>
+    </div>
+</form>
+
+
+<!-- include footer -->
+<%- include('include/_footer')%>
+<!-- /include footer -->

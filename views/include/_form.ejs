@@ -1,0 +1,25 @@
+<form action="/api/results" method="post" id="add_result">
+    <div class="new_result">
+        <div class="form-group">
+            <label for="rollno" class="text-light">Roll No.</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="rollno" value="">
+        </div>
+        <div class="form-group">
+            <label for="name" class="text-light">Name</label>
+            <input type="text" name="name" value="" placeholder="Name">
+        </div>
+        <div class="form-group">
+            <label for="dateOfBirth" class="text-light">Date of Birth</label>
+            <input type="date" name="dateOfBirth" value="">
+        </div>
+        <div class="form-group">
+            <label for="score" class="text-light">Score</label>
+            <input type="text" name="score" value="">
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">Save</button>
+        </div>
+    </div>
+</form>
