@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "root",
-    "password": "root",
-    "database": "result",
-    "host": "127.0.0.1",
+    "username": "sql12656561",
+    "password": "vvWtgrMgVH",
+    "database": "sql12656561",
+    "host": "sql12.freesqldatabase.com",
     "dialect": "mysql"
   },
   "test": {

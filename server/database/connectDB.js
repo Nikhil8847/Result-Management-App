@@ -1,7 +1,7 @@
 const sequelize = require("./connection");
-const {Sequelize} = require('sequelize')
+const { Sequelize } = require("sequelize");
 async function connectDB() {
-  const databaseName = "result";
+  const databaseName = "sql12656561";
 
   try {
     // Check if the database exists
@@ -13,14 +13,18 @@ async function connectDB() {
     if (result.length === 0) {
       // Create the database
       await sequelize.query(`CREATE DATABASE ${databaseName};`);
-      console.log(`Database ${databaseName} created successfully.`)
-    }
-    else {
-        console.log(`Database '${databaseName}' connected successfully.`);
+      const table = await sequelize.query(`SELECT * from ${databaseName}`);
+      console.log("result", table);
+      console.log(`Database ${databaseName} created successfully.`);
+    } else {
+      const table = await sequelize.query(`SELECT * from ${databaseName}`);
+      console.log("result", table);
+      console.log(`Database ${databaseName} created successfully.`);
+      console.log(`Database '${databaseName}' connected successfully.`);
     }
   } catch (error) {
     console.error("Error checking/creating database:", error);
   }
 }
 
-module.exports = connectDB
+module.exports = connectDB;
